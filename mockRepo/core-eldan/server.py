@@ -6,8 +6,24 @@ import gspread
 from xml.etree import ElementTree as ET
 
 # Set Environment Variables
-NEXUS_API_KEY = os.environ.get('NEXUS_API_KEY', 'bce3859a-2ea1-3a4e-8e27-96bbb8a3abc8')
+NEXUS_API_KEY = os.environ.get('NEXUS_API_KEY', '121d0000-0f4c-314a-8674-ca3f2db5847a')
+NEXUS_URL = os.environ.get('NEXUS_URL', 'https://eldan-repo.devopshift.com/nexus')
 BUILD_NUMBER = os.environ.get('BUILD_NUMBER' , '1.00.1')
+
+# Check if we are able to connect to nexus api with the NEXUS_API_KEY and if not abort the process
+def check_nexus_api_key():
+    # Run the curl command to check if the NEXUS_API_KEY is valid
+    curl_command = f"curl -u admin:{NEXUS_API_KEY} {NEXUS_URL}/service/rest/v1/status"
+    try:
+        output = subprocess.check_output(curl_command, shell=True, text=True)
+        print(f"NEXUS_API_KEY is valid.")
+        return
+    except subprocess.CalledProcessError as e:
+        output = (f"NEXUS_API_KEY is invalid. Error: {e.output}")
+        print (output)
+        exit(1)
+
+    
 # Function to process a job
 def process_job(job_id, jobs_list, processed_jobs):
     # Attempt to find the job by ID
@@ -25,8 +41,10 @@ def process_job(job_id, jobs_list, processed_jobs):
     if not job:
         print(f"JobID: {job_id} not found. Skipping...")
         return
-
-    if job["Name"] not in os.listdir('./mockRepo/core-eldan/src/'):
+    if job["Name"] == '':
+        print(f"JobID: {job_id} has no name. Skipping...")
+        return
+    elif job["Name"] not in os.listdir('./mockRepo/core-eldan/src/'):
         os.mkdir(f'./mockRepo/core-eldan/src/{job["Name"]}')
         copy_files(job_id, job["Name"])
     else:
@@ -53,10 +71,10 @@ def process_job(job_id, jobs_list, processed_jobs):
     # Run the docker build command and log the output to the console as json format.
     # Catch docker build errors and log them to the console in json and continue processing the next job.
     # Json structure should be { "JobID": 1, "Name": "DataAccess", "Status": "Success" , "Error": "" , timeofexecution: ""2021-09-01T12:00:00Z"" }
-    # Docker command: docker build  --build-arg NEXUS_API_KEY=bce3859a-2ea1-3a4e-8e27-96bbb8a3abc8 --build-arg BUILD_NUMBER=1.00.1 -t {jobname} -f dockerfile .
+    # Docker command: docker build  --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER=1.00.1 -t {jobname} -f dockerfile .
     job_name_lower = job["Name"].lower()
     job_name = job["Name"]
-    docker_build_command = f"cd ./mockRepo/core-eldan/src/{job_name}/ && docker build --build-arg NEXUS_API_KEY=bce3859a-2ea1-3a4e-8e27-96bbb8a3abc8 --build-arg BUILD_NUMBER=1.00.1 -t {job_name_lower} -f dockerfile ."
+    docker_build_command = f"cd ./mockRepo/core-eldan/src/{job_name}/ && docker build --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER=1.00.1 -t {job_name_lower} -f dockerfile ."
     try:
         print(f"Running docker build command for JobID: {job_id} ('{job['Name']}')...")
         output = subprocess.check_output(docker_build_command, shell=True, text=True)
@@ -143,6 +161,8 @@ def copy_files(job_id, job_name):
 
 # Main logic
 def main():
+    # Check if the NEXUS_API_KEY is valid
+    check_nexus_api_key()
     # Initialize gspread client and open spreadsheet
     service_account_file_paths = ['./mockRepo/core-eldan/service-account.json', '/app/service-account.json', './service-account.json']
     for path in service_account_file_paths:

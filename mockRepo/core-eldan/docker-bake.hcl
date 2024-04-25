@@ -6,7 +6,7 @@ group "default" {
 
 
 variable "NEXUS_API_KEY" {
-  default = "bce3859a-2ea1-3a4e-8e27-96bbb8a3abc8"
+  default = "121d0000-0f4c-314a-8674-ca3f2db5847a"
 }
 variable "BUILD_NUMBER" {
   default = "1.0.0"

@@ -15,7 +15,7 @@ variable "Dockerfile_Name" {
 }
 
 target "ImageProcessing" {
-  context = ".\\src\\ImageProcessing\"
+  context = ".\\src\\ImageProcessing"
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/image-processing:latest"]
   args = {

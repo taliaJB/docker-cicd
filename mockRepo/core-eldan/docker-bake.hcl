@@ -15,7 +15,7 @@ variable "Dockerfile_Name" {
 }
 
 target "ImageProcessing" {
-  context = ".\src\ImageProcessing\"
+  context = "".\src\ImageProcessing\""
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/image-processing:latest"]
   args = {
@@ -26,7 +26,7 @@ target "ImageProcessing" {
 }
 
 target "SecurityBase" {
-  context = ".\src\SecurityBase"
+  context = "".\src\SecurityBase""
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/security-base:latest"]
   args = {
@@ -36,7 +36,7 @@ target "SecurityBase" {
 }
 
 target "ServicesSchedulerLib" {
-  context = ".\src\ServicesSchedulerLib"
+  context = "".\src\ServicesSchedulerLib""
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/services-scheduler-lib:latest"]
   args = {
@@ -47,7 +47,7 @@ target "ServicesSchedulerLib" {
 }
 
 target "SharedTypes" {
-  context = ".\src\SharedTypes"
+  context = "".\src\SharedTypes""
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/shared-types:latest"]
   args = {
@@ -58,7 +58,7 @@ target "SharedTypes" {
 }
 
 target "TypeExtensions" {
-  context = ".\src\TypeExtensions"
+  context = "".\src\TypeExtensions""
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/type-extensions:latest"]
   args = {
@@ -68,7 +68,7 @@ target "TypeExtensions" {
 }
 
 target "SSOlogon" {
-  context = ".\src\SSOlogon"
+  context = "".\src\SSOlogon""
   dockerfile = "${Dockerfile_Name}"
   tags= ["eldan/sso-logon:latest"]
   args = {
@@ -79,7 +79,7 @@ target "SSOlogon" {
 }
 
 target "QR" {
-  context = ".\src\QR"
+  context = "".\src\QR""
   dockerfile = "${Dockerfile_Name}"
   tags= ["eldan/qr:latest"]
   args = {
@@ -90,7 +90,7 @@ target "QR" {
 }
 
 target "FireflyBox" {
-  context = ".\src\FireflyBox"
+  context = "".\src\FireflyBox""
   dockerfile = "${Dockerfile_Name}"
   tags= ["eldan/qr:latest"]
   args = {

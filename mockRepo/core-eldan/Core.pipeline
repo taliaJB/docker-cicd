@@ -7,13 +7,9 @@ pipeline {
         GIT_CREDENTIALS_ID = 'git-credentials-id'
         REGISTRY_CREDS = 'dockerRepoeldan'
         DOCKER_REPO = 'eldan-repo.devopshift.com'
-        DOCKER_IMAGE_NAME = "${DOCKER_REPO}/buildroot/buildroot"
-        DOCKER_IMAGE_TAG = "1.00.0"
-        DOCKER_FILE = 'buildroot.Dockerfile'
-        DOCKER_ARTIFACT_FILE = 'buildroot.artifacts.Dockerfile'
+        Dockerfile_Name = 'DockerfileWindows'
         WORKSPACEFOLDER = './mockRepo/core-eldan/'
-        BINARY_UPLOADER_IMAGE = 'eldan-repo.devopshift.com/binary_manager/binary_manager:1.00.1'
-        BINARY_ARTIFACT_FILE = '/resources/output/sx4000/images/buildroot-artifact.tar'
+        NEXUS_API_KEY = '121d0000-0f4c-314a-8674-ca3f2db5847a'
     }
 
     stages {

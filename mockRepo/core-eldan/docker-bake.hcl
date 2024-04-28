@@ -10,13 +10,13 @@ variable "BUILD_NUMBER" {
   default = "1.0.0"
 }
 
-variable "containerType" {
+variable "Dockerfile_Name" {
   default = "Dockerfile"
 }
 
 target "ImageProcessing" {
   context = "./src/ImageProcessing"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/image-processing:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -27,7 +27,7 @@ target "ImageProcessing" {
 
 target "SecurityBase" {
   context = "./src/SecurityBase"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/security-base:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -37,7 +37,7 @@ target "SecurityBase" {
 
 target "ServicesSchedulerLib" {
   context = "./src/ServicesSchedulerLib"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/services-scheduler-lib:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -48,7 +48,7 @@ target "ServicesSchedulerLib" {
 
 target "SharedTypes" {
   context = "./src/SharedTypes"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/shared-types:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -59,7 +59,7 @@ target "SharedTypes" {
 
 target "TypeExtensions" {
   context = "./src/TypeExtensions"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/type-extensions:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -69,7 +69,7 @@ target "TypeExtensions" {
 
 target "SSOlogon" {
   context = "./src/SSOlogon"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags= ["eldan/sso-logon:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -80,7 +80,7 @@ target "SSOlogon" {
 
 target "QR" {
   context = "./src/QR"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags= ["eldan/qr:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",
@@ -91,7 +91,7 @@ target "QR" {
 
 target "FireflyBox" {
   context = "./src/FireflyBox"
-  dockerfile = "${containerType}"
+  dockerfile = "${Dockerfile_Name}"
   tags= ["eldan/qr:latest"]
   args = {
     NEXUS_API_KEY = "${NEXUS_API_KEY}",

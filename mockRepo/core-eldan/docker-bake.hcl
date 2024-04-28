@@ -11,7 +11,7 @@ variable "BUILD_NUMBER" {
 }
 
 variable "Dockerfile_Name" {
-  default = "Dockerfile"
+  default = "DockerfileWindows"
 }
 
 target "ImageProcessing" {

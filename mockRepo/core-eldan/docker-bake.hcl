@@ -16,7 +16,7 @@ variable "Dockerfile_Name" {
 
 
 target "test" {
-  context = ".\\src\\test"
+  context = C:\Users\cloudadmin\workarea\docker-cicd\mockRepo\core-eldan\src\test
   dockerfile = "${Dockerfile_Name}"
   tags = ["eldan/image-processing:latest"]
   args = {

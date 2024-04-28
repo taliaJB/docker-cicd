@@ -1,0 +1,2 @@
+# Use the official Microsoft .NET SDK image to build the application
+FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build-env

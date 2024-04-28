@@ -14,6 +14,18 @@ variable "Dockerfile_Name" {
   default = "DockerfileWindows"
 }
 
+
+target "test" {
+  context = ".\\src\\test"
+  dockerfile = "${Dockerfile_Name}"
+  tags = ["eldan/image-processing:latest"]
+  args = {
+    NEXUS_API_KEY = "${NEXUS_API_KEY}",
+    BUILD_NUMBER = "${BUILD_NUMBER}"
+  }
+  // platforms = ["linux/amd64", "linux/arm64"]
+}
+
 target "ImageProcessing" {
   context = ".\\src\\ImageProcessing"
   dockerfile = "${Dockerfile_Name}"

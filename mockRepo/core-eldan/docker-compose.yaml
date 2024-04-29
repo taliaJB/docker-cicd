@@ -1,0 +1,83 @@
+# For testing: 
+#BUILD_NUMBER=1.0.0 Dockerfile_Name=Dockerfile NEXUS_API_KEY=123abc docker-compose up
+services:
+  test:
+    build:
+      context: './src/test'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/image-processing:${BUILD_NUMBER}
+  
+  ImageProcessing:
+    build:
+      context: './src/ImageProcessing'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/image-processing:${BUILD_NUMBER}
+
+  SecurityBase:
+    build:
+      context: './src/SecurityBase'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/security-base:${BUILD_NUMBER}
+
+  ServicesSchedulerLib:
+    build:
+      context: './src/ServicesSchedulerLib'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/services-scheduler-lib:${BUILD_NUMBER}
+
+  SharedTypes:
+    build:
+      context: './src/SharedTypes'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/shared-types:${BUILD_NUMBER}
+
+  TypeExtensions:
+    build:
+      context: './src/TypeExtensions'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/type-extensions:${BUILD_NUMBER}
+
+  SSOlogon:
+    build:
+      context: './src/SSOlogon'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/sso-logon:${BUILD_NUMBER}
+
+  QR:
+      build:
+        context: './src/QR'
+        dockerfile: ${Dockerfile_Name}
+        args:
+          - NEXUS_API_KEY=${NEXUS_API_KEY}
+          - BUILD_NUMBER=${BUILD_NUMBER}
+      image: eldan/qr:${BUILD_NUMBER}
+
+  FireflyBox:
+    build:
+      context: './src/FireflyBox'
+      dockerfile: ${Dockerfile_Name}
+      args:
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/firefly-box:${BUILD_NUMBER}

@@ -19,6 +19,8 @@ RUN powershell -Command \
 # # Replace 'YourPackageName' with your actual package name and '1.0.0' with your package version
 ARG BUILD_NUMBER
 RUN powershell -Command \
+    echo "printing ${BUILD_NUMBER}"
+RUN powershell -Command \
     dotnet pack /p:PackageVersion=$BUILD_NUMBER -o nugets
 
 

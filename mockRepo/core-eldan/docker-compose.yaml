@@ -23,8 +23,8 @@ services:
       context: './src/ImageProcessing'
       dockerfile: ${Dockerfile_Name}
       args:
-        - NEXUS_API_KEY=$env:NEXUS_API_KEY
-        - BUILD_NUMBER=$env:NEXUS_API_KEY
+        - NEXUS_API_KEY=${NEXUS_API_KEY}
+        - BUILD_NUMBER=${BUILD_NUMBER}
     image: eldan/image-processing:${BUILD_NUMBER}
 
   SecurityBase:

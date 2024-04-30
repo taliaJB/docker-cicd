@@ -22,15 +22,17 @@
     <Optimize>true</Optimize>
     <OutputPath>..\..\dlls\</OutputPath>
   </PropertyGroup>
+
   <ItemGroup>
-    <!-- <PackageReference Include="System.IO.Compression" Version="4.3.0" />
-    <PackageReference Include="System.IO.Compression.FileSystem" Version="4.3.0" /> -->
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" /> <!-- Update to the latest version you are using -->
-    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1000" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <!-- Include Microsoft Office Interop Excel via NuGet if available -->
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>..\..\Interop\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\dlls\Newtonsoft.Json.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

@@ -26,8 +26,13 @@
     <!-- <PackageReference Include="System.IO.Compression" Version="4.3.0" />
     <PackageReference Include="System.IO.Compression.FileSystem" Version="4.3.0" /> -->
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" /> <!-- Update to the latest version you are using -->
-    <Reference Include="Microsoft.Office.Interop.Excel">
-      <HintPath>./requiredDLL/Microsoft.Office.Interop.Excel.dll</HintPath>
+    <Reference Include="Microsoft.Office.Interop.Excel" >
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Culture>neutral</Culture> <!-- Specify the culture -->
+      <PublicKeyToken>71e9bce111e9429c</PublicKeyToken> <!-- Specify the public key token -->
+      <ProcessorArchitecture>MSIL</ProcessorArchitecture> <!-- Specify the processor architecture -->  
+      <HintPath>.\requiredDLL\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
     </ItemGroup>
   

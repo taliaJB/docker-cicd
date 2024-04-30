@@ -32,20 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- References -->
-    <!-- <Reference Include="Eldan.ImageProcessing">
-      <HintPath>..\..\dlls\Eldan.ImageProcessing.dll</HintPath>
-    </Reference>
-    <Reference Include="Eldan.Logger">
-      <HintPath>..\..\dlls\Eldan.Logger.dll</HintPath>
-    </Reference>
-    <Reference Include="Eldan.TypeExtensions">
-      <HintPath>..\..\dlls\Eldan.TypeExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Administration" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\dlls\Newtonsoft.Json.dll</HintPath>
-    </Reference> -->
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -59,14 +45,5 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!-- Compile items -->
-    <Compile Include="BodyParams.cs" />
-    <Compile Include="ftp.cs" />
-    <Compile Include="HTTP.cs" />
-    <Compile Include="NFS.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Token.cs" />
-  </ItemGroup>
 
 </Project>

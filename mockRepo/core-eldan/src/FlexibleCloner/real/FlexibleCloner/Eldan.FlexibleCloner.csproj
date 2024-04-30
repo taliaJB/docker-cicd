@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net48</TargetFramework>
-    <AssemblyName>Eldan.FlexibleCloner</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>Eldan.FlexibleCloner</RootNamespace>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -23,7 +23,7 @@
   
   <!-- Nexus nuget -->
   <ItemGroup>
-    <PackageReference Include="Eldan.SecurityBase" Version="*" />
+    <PackageReference Include="Eldan.TypeExtensions" Version="*" />
   </ItemGroup>
   
   <ItemGroup>

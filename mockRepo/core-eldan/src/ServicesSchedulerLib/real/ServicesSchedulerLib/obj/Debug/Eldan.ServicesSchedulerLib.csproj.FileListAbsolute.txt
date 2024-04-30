@@ -1,0 +1,6 @@
+C:\Main\dlls\Eldan.ServicesSchedulerLib.dll
+C:\Main\dlls\Eldan.ServicesSchedulerLib.pdb
+C:\Main\Eldan.ServicesScheduler\Eldan.ServicesSchedulerLib\obj\Debug\Eldan.ServicesSchedulerLib.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.ServicesScheduler\Eldan.ServicesSchedulerLib\obj\Debug\Eldan.ServicesSchedulerLib.dll
+C:\Main\Eldan.ServicesScheduler\Eldan.ServicesSchedulerLib\obj\Debug\Eldan.ServicesSchedulerLib.pdb
+C:\Main\Eldan.ServicesScheduler\Eldan.ServicesSchedulerLib\obj\Debug\Eldan.ServicesSchedulerLib.csproj.AssemblyReference.cache

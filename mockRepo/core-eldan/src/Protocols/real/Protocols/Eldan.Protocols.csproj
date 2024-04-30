@@ -27,7 +27,7 @@
     <PackageReference Include="Eldan.ImageProcessing" Version="*" />
     <PackageReference Include="Eldan.Logger" Version="*" />
     <PackageReference Include="Eldan.TypeExtensions" Version="*" />
-    <PackageReference Include="Microsoft.Web.Administration" Version="7.0.0.0">
+    <PackageReference Include="Microsoft.Web.Administration" Version="*">
       <Culture>neutral</Culture>
       <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       <processorArchitecture>MSIL</processorArchitecture>

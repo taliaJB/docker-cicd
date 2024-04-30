@@ -1,0 +1,6 @@
+C:\Main\dlls\Eldan.SharedTypesLib.dll
+C:\Main\dlls\Eldan.SharedTypesLib.pdb
+C:\Main\Eldan.SharedTypes\Eldan.SharedTypesLib\obj\Debug\Eldan.SharedTypesLib.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.SharedTypes\Eldan.SharedTypesLib\obj\Debug\Eldan.SharedTypesLib.dll
+C:\Main\Eldan.SharedTypes\Eldan.SharedTypesLib\obj\Debug\Eldan.SharedTypesLib.pdb
+C:\Main\Eldan.SharedTypes\Eldan.SharedTypesLib\obj\Debug\Eldan.SharedTypesLib.csproj.AssemblyReference.cache

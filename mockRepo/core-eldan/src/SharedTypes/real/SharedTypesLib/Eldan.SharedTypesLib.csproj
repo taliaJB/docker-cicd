@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Eldan.SharedTypesLib</RootNamespace>
+    <AssemblyName>Eldan.SharedTypesLib</AssemblyName>
+    <Deterministic>true</Deterministic>
+    <Nullable>enable</Nullable> <!-- Optional: Enable nullable reference types -->
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\dlls\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <!-- Implicitly includes all .cs files, adjust if necessary -->
+  <ItemGroup>
+    <None Include="**\*.cs" Exclude="bin\**;obj\**" />
+  </ItemGroup>
+
+  <!-- Remove these if all necessary references are met by the SDK -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.NETCore.App" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" /> <!-- Use appropriate versions -->
+  </ItemGroup>
+</Project>

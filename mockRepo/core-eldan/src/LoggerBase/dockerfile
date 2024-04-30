@@ -10,7 +10,6 @@ RUN dotnet restore
 # image TypeExtensions
 # COPY --from=eldan/type-extensions /app/TypeExtensions.dll /app/out/
 # Copy the rest of the files and build
-
 RUN dotnet publish -c Release -o out
 
 # # Generate nuget package

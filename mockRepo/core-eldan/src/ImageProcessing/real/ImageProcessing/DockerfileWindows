@@ -16,7 +16,7 @@ COPY . ./
 # RUN powershell -Command \
 #     dotnet pack /p:PackageVersion=$env:BUILD_NUMBER -c Release -o nupkgs
 
-
+# dotnet pack /p:PackageVersion=1.0.0 -c Release -o nupkgs
 
 
 # # # Upload artifacts to nexus

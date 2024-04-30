@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Eldan.SecurityBase</RootNamespace>
+    <AssemblyName>Eldan.SecurityBase</AssemblyName>
+    <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>  <!-- Assuming you want to use the latest C# features -->
+  </PropertyGroup>
+
+  <!-- Configuration for Debug and Release -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\dlls\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+<ItemGroup>
+  <PackageReference Include="System.Net.Http" Version="4.3.4" /> <!-- Specify the version you need -->
+</ItemGroup>
+<ItemGroup>
+  <!-- Automatically includes all C# files in the project directory -->
+  <Compile Include="**\*.cs" Exclude="bin\**;obj\**;**\*Generated*.cs" />
+</ItemGroup>
+<PropertyGroup>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+</Project>  

@@ -1,0 +1,6 @@
+C:\Main\dlls\Eldan.SecurityBase.dll
+C:\Main\dlls\Eldan.SecurityBase.pdb
+C:\Main\Eldan.Security\Eldan.SecurityBase\obj\Debug\Eldan.SecurityBase.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.Security\Eldan.SecurityBase\obj\Debug\Eldan.SecurityBase.dll
+C:\Main\Eldan.Security\Eldan.SecurityBase\obj\Debug\Eldan.SecurityBase.pdb
+C:\Main\Eldan.Security\Eldan.SecurityBase\obj\Debug\Eldan.SecurityBase.csproj.AssemblyReference.cache

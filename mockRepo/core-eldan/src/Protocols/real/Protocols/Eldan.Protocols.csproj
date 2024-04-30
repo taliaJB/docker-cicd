@@ -27,7 +27,16 @@
     <PackageReference Include="Eldan.ImageProcessing" Version="*" />
     <PackageReference Include="Eldan.Logger" Version="*" />
     <PackageReference Include="Eldan.TypeExtensions" Version="*" />
-    <!-- <PackageReference Include="Microsoft.Web.Administration" Version="*" /> -->
+    <PackageReference Include="Microsoft.Web.Administration" Version="7.0.0.0">
+      <Culture>neutral</Culture>
+      <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      <processorArchitecture>MSIL</processorArchitecture>
+      </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="7.0.0.0">
+      <Culture>neutral</Culture>
+      <PublicKeyToken>30ad4fe6b2a6aeed</PublicKeyToken>
+      <processorArchitecture>MSIL</processorArchitecture>
+      </PackageReference>
 
   </ItemGroup>
 

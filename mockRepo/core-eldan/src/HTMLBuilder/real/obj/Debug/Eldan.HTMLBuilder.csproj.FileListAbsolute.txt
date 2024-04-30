@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.HTMLBuilder.dll
+C:\Main\dlls\Eldan.HTMLBuilder.pdb
+C:\Main\Eldan.HTMLBuilder\Eldan.HTMLBuilder\obj\Debug\Eldan.HTMLBuilder.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.HTMLBuilder\Eldan.HTMLBuilder\obj\Debug\Eldan.HTMLBuilder.csproj.CopyComplete
+C:\Main\Eldan.HTMLBuilder\Eldan.HTMLBuilder\obj\Debug\Eldan.HTMLBuilder.dll
+C:\Main\Eldan.HTMLBuilder\Eldan.HTMLBuilder\obj\Debug\Eldan.HTMLBuilder.pdb
+C:\Main\Eldan.HTMLBuilder\Eldan.HTMLBuilder\obj\Debug\Eldan.HTMLBuilder.csproj.AssemblyReference.cache

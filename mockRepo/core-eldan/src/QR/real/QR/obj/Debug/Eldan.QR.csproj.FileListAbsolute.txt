@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.QR.dll
+C:\Main\dlls\Eldan.QR.pdb
+C:\Main\Eldan.QR\Eldan.QR\obj\Debug\Eldan.QR.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.QR\Eldan.QR\obj\Debug\Eldan.QR.csproj.CopyComplete
+C:\Main\Eldan.QR\Eldan.QR\obj\Debug\Eldan.QR.dll
+C:\Main\Eldan.QR\Eldan.QR\obj\Debug\Eldan.QR.pdb
+C:\Main\Eldan.QR\Eldan.QR\obj\Debug\Eldan.QR.csproj.AssemblyReference.cache

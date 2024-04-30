@@ -14,6 +14,7 @@
     <Nullable>disable</Nullable>
     <!-- Adjust the following paths as needed -->
     <OutputPath>bin\$(Configuration)\</OutputPath>
+    
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -34,10 +35,10 @@
     <PackageReference Include="Spire.Pdf" Version="6.2.4" />
     <!-- Add other package references as needed -->
   </ItemGroup>
-
-  <ItemGroup>
+<!-- No need the below for new sdk style compile -->
+  <!-- <ItemGroup>
     <Compile Include="**\*.cs" Exclude="bin\**;obj\**" />
-  </ItemGroup>
+  </ItemGroup> -->
 
   <ItemGroup>
     <!-- Include other necessary files like resources and settings if required -->

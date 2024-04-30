@@ -22,8 +22,9 @@
   </PropertyGroup>
   
   <!-- Nexus nuget -->
-  <ItemGroup><PackageReference Include="Core.SecurityBase" Version="*" />
-  <PackageReference Include="Core.TypeExtensions" Version="*" /></ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Eldan.SecurityBase" Version="*" />
+  </ItemGroup>
   
   <ItemGroup>
     <!-- System references -->

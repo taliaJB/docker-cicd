@@ -7,6 +7,8 @@
     <!-- <LangVersion>latest</LangVersion> Assuming you want to use the latest C# features -->
     <Deterministic>true</Deterministic>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+
   </PropertyGroup>
 
   <!-- Configuration for Debug -->
@@ -29,6 +31,11 @@
 
   <!-- References -->
   <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="5.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -43,9 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
 
-  <!-- Compile Items -->
-  <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;**\*Generated*.cs;Properties\AssemblyInfo.cs;StringCipher.cs" />
-  </ItemGroup>
+  
 
 </Project>

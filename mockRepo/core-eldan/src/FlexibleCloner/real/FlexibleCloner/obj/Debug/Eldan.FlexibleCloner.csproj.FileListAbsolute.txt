@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.FlexibleCloner.dll
+C:\Main\dlls\Eldan.FlexibleCloner.pdb
+C:\Main\Eldan.FlexibleCloner\Eldan.FlexibleCloner\obj\Debug\Eldan.FlexibleCloner.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.FlexibleCloner\Eldan.FlexibleCloner\obj\Debug\Eldan.FlexibleCloner.csproj.CopyComplete
+C:\Main\Eldan.FlexibleCloner\Eldan.FlexibleCloner\obj\Debug\Eldan.FlexibleCloner.dll
+C:\Main\Eldan.FlexibleCloner\Eldan.FlexibleCloner\obj\Debug\Eldan.FlexibleCloner.pdb
+C:\Main\Eldan.FlexibleCloner\Eldan.FlexibleCloner\obj\Debug\Eldan.FlexibleCloner.csproj.AssemblyReference.cache

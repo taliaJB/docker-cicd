@@ -11,6 +11,13 @@
     <RootNamespace>Eldan.ImageProcessing</RootNamespace>
     <AssemblyName>Eldan.ImageProcessing</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PackageId>Eldan.ImageProcessing</PackageId>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Description>Library for advanced image processing.</Description>
+    <Copyright>Copyright 2024 Eldan</Copyright>
+    <PackageTags>Image;Processing;PDF;Spire;Magick.NET</PackageTags>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>

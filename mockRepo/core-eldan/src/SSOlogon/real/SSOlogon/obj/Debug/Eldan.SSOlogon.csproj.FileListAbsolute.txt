@@ -1,0 +1,11 @@
+C:\Main\dlls\Eldan.SSOlogon.dll.config
+C:\Main\dlls\Eldan.SSOlogon.dll
+C:\Main\dlls\Eldan.SSOlogon.pdb
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.Login.resources
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.Properties.Resources.resources
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.SelfChangePassword.resources
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.csproj.GenerateResource.cache
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.dll
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.pdb
+C:\Main\Eldan.SSOlogon\obj\Debug\Eldan.SSOlogon.csproj.AssemblyReference.cache

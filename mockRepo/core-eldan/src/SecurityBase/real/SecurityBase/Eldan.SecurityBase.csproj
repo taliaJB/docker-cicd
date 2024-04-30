@@ -5,7 +5,7 @@
     <RootNamespace>Eldan.SecurityBase</RootNamespace>
     <AssemblyName>Eldan.SecurityBase</AssemblyName>
     <Deterministic>true</Deterministic>
-    <LangVersion>latest</LangVersion>  <!-- Assuming you want to use the latest C# features -->
+    <!-- <LangVersion>latest</LangVersion>  Assuming you want to use the latest C# features -->
   </PropertyGroup>
 
   <!-- Configuration for Debug and Release -->

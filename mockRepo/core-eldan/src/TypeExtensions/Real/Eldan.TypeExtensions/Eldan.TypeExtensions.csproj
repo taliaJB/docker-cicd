@@ -25,15 +25,12 @@
   <ItemGroup>
     <!-- <PackageReference Include="System.IO.Compression" Version="4.3.0" />
     <PackageReference Include="System.IO.Compression.FileSystem" Version="4.3.0" /> -->
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=, Culture=ne15.0.0.0utral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"/>
-    
-      
+    <PackageReference Include="Newtonsoft.Json" Version="4.5.0.0" /> <!-- Update to the latest version you are using -->
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.0.0" />
   </ItemGroup>
   
   <ItemGroup>
     <!-- Include Microsoft Office Interop Excel via NuGet if available -->
-    
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.TypeExtensions.dll
+C:\Main\dlls\Eldan.TypeExtensions.pdb
+C:\Main\Eldan.TypeExtensions\Eldan.TypeExtensions\obj\Debug\Eldan.TypeExtensions.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.TypeExtensions\Eldan.TypeExtensions\obj\Debug\Eldan.TypeExtensions.csproj.CopyComplete
+C:\Main\Eldan.TypeExtensions\Eldan.TypeExtensions\obj\Debug\Eldan.TypeExtensions.dll
+C:\Main\Eldan.TypeExtensions\Eldan.TypeExtensions\obj\Debug\Eldan.TypeExtensions.pdb
+C:\Main\Eldan.TypeExtensions\Eldan.TypeExtensions\obj\Debug\Eldan.TypeExtensions.csproj.AssemblyReference.cache

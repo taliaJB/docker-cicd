@@ -14,14 +14,14 @@
     <Reference Include="itextsharp">
       <HintPath>.\requiredDLL\itextsharp.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+    
       <Culture>neutral</Culture> <!-- Specify the culture -->
       <PublicKeyToken>8354ae6d2174ddca</PublicKeyToken> <!-- Specify the public key token -->
     </Reference>
     <Reference Include="Magick.NET-Q16-AnyCPU">
       <HintPath>.\requiredDLL\Magick.NET-Q16-AnyCPU.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      
       <Culture>neutral</Culture> <!-- Specify the culture -->
       <PublicKeyToken>2004825badfa91ec</PublicKeyToken> <!-- Specify the public key token -->
       <processorArchitecture>MSIL</processorArchitecture>
@@ -29,7 +29,6 @@
     <Reference Include="Magick.NET.Core">
       <HintPath>.\requiredDLL\Magick.NET.Core.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
       <Culture>neutral</Culture> <!-- Specify the culture -->
       <PublicKeyToken>2004825badfa91ec</PublicKeyToken> <!-- Specify the public key token -->
       <processorArchitecture>MSIL</processorArchitecture>
@@ -37,7 +36,6 @@
     <Reference Include="Spire.License">
       <HintPath>.\requiredDLL\Spire.License.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
       <Culture>neutral</Culture> <!-- Specify the culture -->
       <PublicKeyToken>b1144360237c8b3f</PublicKeyToken> <!-- Specify the public key token -->
       <processorArchitecture>MSIL</processorArchitecture>
@@ -45,7 +43,6 @@
     <Reference Include="Spire.Pdf">
       <HintPath>.\requiredDLL\Spire.Pdf.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
       <Culture>neutral</Culture> <!-- Specify the culture -->
       <PublicKeyToken>663f351905198cb3</PublicKeyToken> <!-- Specify the public key token -->
       <processorArchitecture>MSIL</processorArchitecture>

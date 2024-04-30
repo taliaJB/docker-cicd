@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.Protocols.dll
+C:\Main\dlls\Eldan.Protocols.pdb
+C:\Main\Eldan.Protocols\Eldan.Protocols\obj\Debug\Eldan.Protocols.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.Protocols\Eldan.Protocols\obj\Debug\Eldan.Protocols.csproj.CopyComplete
+C:\Main\Eldan.Protocols\Eldan.Protocols\obj\Debug\Eldan.Protocols.dll
+C:\Main\Eldan.Protocols\Eldan.Protocols\obj\Debug\Eldan.Protocols.pdb
+C:\Main\Eldan.Protocols\Eldan.Protocols\obj\Debug\Eldan.Protocols.csproj.AssemblyReference.cache

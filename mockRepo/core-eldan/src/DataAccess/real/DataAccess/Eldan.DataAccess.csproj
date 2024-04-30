@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>Eldan.DataAccess</RootNamespace>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\dlls\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <OutputPath>..\..\dlls\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Eldan.TypeExtensions" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Eldan.SecurityBase" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- no need anymore
+    
+    <Reference Include="Eldan.SecurityBase">
+      <HintPath>..\..\..\Branches\DriverTasks\Dlls\Eldan.SecurityBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Eldan.TypeExtensions">
+      <HintPath>..\..\dlls\Eldan.TypeExtensions.dll</HintPath>
+    </Reference> -->
+
+
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+</Project>

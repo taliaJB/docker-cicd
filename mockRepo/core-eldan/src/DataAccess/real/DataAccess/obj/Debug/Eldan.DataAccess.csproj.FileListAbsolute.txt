@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.DataAccess.dll
+C:\Main\dlls\Eldan.DataAccess.pdb
+C:\Main\Eldan.DataAccess\Eldan.DataAccess\obj\Debug\Eldan.DataAccess.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.DataAccess\Eldan.DataAccess\obj\Debug\Eldan.DataAccess.csproj.CopyComplete
+C:\Main\Eldan.DataAccess\Eldan.DataAccess\obj\Debug\Eldan.DataAccess.dll
+C:\Main\Eldan.DataAccess\Eldan.DataAccess\obj\Debug\Eldan.DataAccess.pdb
+C:\Main\Eldan.DataAccess\Eldan.DataAccess\obj\Debug\Eldan.DataAccess.csproj.AssemblyReference.cache

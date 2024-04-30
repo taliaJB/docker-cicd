@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>Eldan.LoggerFrm</AssemblyName>
+    <RootNamespace>Eldan.LoggerFrm</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\dlls\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- System references -->
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <!-- Nexus nuget -->
+  <ItemGroup>
+    <PackageReference Include="Eldan.LoggerBase" Version="*" />
+  </ItemGroup>
+ 
+  <!-- Project reference to Eldan.LoggerBase -->
+<!-- NO NEED ANYMORE
+  <ItemGroup>
+   
+    <ProjectReference Include="..\Eldan.LoggerBase\Eldan.LoggerBase.csproj">
+      <Project>{30f0c1d2-7633-4256-ada6-37be7dfeab65}</Project>
+      <Name>Eldan.LoggerBase</Name>
+    </ProjectReference>
+  </ItemGroup> -->
+
+</Project>

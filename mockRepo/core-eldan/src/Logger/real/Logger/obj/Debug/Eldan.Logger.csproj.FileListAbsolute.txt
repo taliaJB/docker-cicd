@@ -1,0 +1,7 @@
+C:\Main\dlls\Eldan.Logger.dll
+C:\Main\dlls\Eldan.Logger.pdb
+C:\Main\Eldan.Logger\Eldan.Logger\obj\Debug\Eldan.Logger.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.Logger\Eldan.Logger\obj\Debug\Eldan.Logger.csproj.CopyComplete
+C:\Main\Eldan.Logger\Eldan.Logger\obj\Debug\Eldan.Logger.dll
+C:\Main\Eldan.Logger\Eldan.Logger\obj\Debug\Eldan.Logger.pdb
+C:\Main\Eldan.Logger\Eldan.Logger\obj\Debug\Eldan.Logger.csproj.AssemblyReference.cache

@@ -29,14 +29,8 @@
 
   <!-- Automatically includes all C# files in the project directory -->
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;**\*Generated*.cs" />
+    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;**\*Generated*.cs;Properties\AssemblyInfo.cs;StringCipher.cs" />
   </ItemGroup>
-
-  <!-- Exclude explicit inclusion of AssemblyInfo.cs and StringCipher.cs -->
-  <!-- <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringCipher.cs" />
-  </ItemGroup> -->
 
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>

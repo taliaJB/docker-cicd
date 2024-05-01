@@ -1,76 +1,24 @@
-﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
     <OutputType>Exe</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>Eldan.ServicesScheduler</AssemblyName>
     <RootNamespace>Eldan.ServicesScheduler</RootNamespace>
-    <StartupObject>Program</StartupObject>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  
-  <ItemGroup>
-
-  <PackageReference Include="Eldan.Logger" Version="*">
-   <Culture>neutral</Culture> 
-   <processorArchitecture>MSIL</processorArchitecture>
-  </PackageReference>
-  <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
-  <PackageReference Include="Eldan.TypeExtensions" Version="*">
-  <Culture>neutral</Culture> 
-  <processorArchitecture>MSIL</processorArchitecture>
-  </PackageReference>
-</ItemGroup>
-
-
-
-
 
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Eldan.Logger" Version="*" />
+    <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
+    <PackageReference Include="Eldan.TypeExtensions" Version="*" />
   </ItemGroup>
-  
-  
-  
-  
+
   <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="**\*.generated.cs" />
+    <Content Include="SchedulerConfig.xml" />
+    <Content Include="TaskSchedulerTemplate.xml" />
     <None Include="App.config" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-      </BootstrapperPackage>  
-    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 4.5</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

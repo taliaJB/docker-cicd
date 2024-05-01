@@ -28,18 +28,20 @@
     <PackageReference Include="Eldan.Logger" Version="*" />
     <PackageReference Include="Eldan.TypeExtensions" Version="*" />
     <!--3RD PARTY  -->
-    <PackageReference Include="Microsoft.Web.Administration" Version="7.0.0.0">
+    <Reference Include="Microsoft.Web.Administration">
       <Culture>neutral</Culture>
       <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
       <processorArchitecture>MSIL</processorArchitecture>
       <HintPath>.\requiredDLL\Microsoft.Web.Administration.dll</HintPath>
-      </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="7.0.0.0">
+    </Reference>
+   
+    <Reference Include="Newtonsoft.Json">
+      <SpecificVersion>False</SpecificVersion>
       <Culture>neutral</Culture>
       <PublicKeyToken>30ad4fe6b2a6aeed</PublicKeyToken>
       <processorArchitecture>MSIL</processorArchitecture>
       <HintPath>.\requiredDLL\Newtonsoft.Json.dll</HintPath>
-      </PackageReference>
+      </Reference>
 
   </ItemGroup>
 

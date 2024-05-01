@@ -44,8 +44,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Eldan.Protocols">
-    </PackageReference>
+    <PackageReference Include="Eldan.Protocols" Version="*" />
   </ItemGroup>
   <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
 </Project>

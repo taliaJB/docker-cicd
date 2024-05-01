@@ -14,7 +14,7 @@
    <Culture>neutral</Culture> 
    <processorArchitecture>MSIL</processorArchitecture>
   </PackageReference>
-  <PackageReference Include="ServicesSchedulerLib" Version="*" />
+  <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
   <PackageReference Include="Eldan.TypeExtensions" Version="*">
   <Culture>neutral</Culture> 
   <processorArchitecture>MSIL</processorArchitecture>

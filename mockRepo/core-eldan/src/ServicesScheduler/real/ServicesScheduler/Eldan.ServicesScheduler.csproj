@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="**\*.generated.cs" />
+    <!-- <Compile Include="**\*.cs" Exclude="**\*.generated.cs" /> -->
     <Content Include="SchedulerConfig.xml" />
     <Content Include="TaskSchedulerTemplate.xml" />
     <None Include="App.config" />

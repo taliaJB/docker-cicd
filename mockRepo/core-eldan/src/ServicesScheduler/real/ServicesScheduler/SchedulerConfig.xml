@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sevices>
+  <service name="TestService" uri="http://localhost:56026/MyService.svc"/>
+</sevices> 

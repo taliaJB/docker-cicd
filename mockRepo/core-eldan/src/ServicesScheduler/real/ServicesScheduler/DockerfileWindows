@@ -5,7 +5,7 @@ WORKDIR /app
 # Copy csproj and restore any dependencies
 COPY . ./
 RUN powershell -Command \
-    dotnet restore website.publishproj
+    dotnet restore
 
 # COPY DLL from required builds - 
 # image TypeExtensions

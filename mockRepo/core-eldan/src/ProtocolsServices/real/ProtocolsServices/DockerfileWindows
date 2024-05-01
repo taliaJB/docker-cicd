@@ -6,10 +6,10 @@ WORKDIR /app
 COPY . ./
 
 # Restore NuGet packages
-RUN nuget restore
+RUN nuget restore website.publishproj
 
 # Build the project
-RUN msbuild /p:Configuration=Release /p:OutputPath=./out YourServiceProject.csproj
+RUN msbuild /p:Configuration=Release /p:OutputPath=./out 
 
 # # Optional: Publish the project
 # # This step depends on whether you need a deployment package or just to compile the binaries

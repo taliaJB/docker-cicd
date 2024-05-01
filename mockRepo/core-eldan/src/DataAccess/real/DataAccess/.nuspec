@@ -12,7 +12,7 @@
     <tags>tag1 tag2</tags>
   </metadata>
   <files>
-    <file src="app\out\DataAccess.dll" target="lib\netstandard2.0\" />
+    <file src="app\out\DataAccess.dll" target="lib\net48\" />
     <!-- Add more <file> elements here for additional files you want to include in the package -->
   </files>
 </package>

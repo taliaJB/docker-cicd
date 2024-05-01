@@ -6,6 +6,7 @@
     <AssemblyName>Eldan.QR</AssemblyName>
     <RootNamespace>Eldan.QR</RootNamespace>
     <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo> <!-- Optional: Disable automatic assembly info generation -->
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">

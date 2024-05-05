@@ -38,6 +38,7 @@ pipeline {
                 script {
                     echo "Workspace Folder: ${env.WORKSPACEFOLDER} "
                     def pipInstall = "powershell -command \"cd '${env.WORKSPACEFOLDER}'; pip install -r requirements.txt\""
+                    bat pipInstall
                     def runCommand = "powershell -command \"cd '${env.WORKSPACEFOLDER}'; python server.py\""
                     bat runCommand
                 }

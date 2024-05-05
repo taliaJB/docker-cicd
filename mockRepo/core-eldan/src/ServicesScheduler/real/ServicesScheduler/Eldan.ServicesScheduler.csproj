@@ -22,4 +22,4 @@
     <None Include="App.config" />
   </ItemGroup>
 
-<ItemGroup><PackageReference Include="Eldan.TypeExtensions" Version="*" /><PackageReference Include="Eldan.Logger-2.3" Version="*" /><PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" /></ItemGroup></Project>
+</Project>

@@ -57,6 +57,4 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-
-
-<ItemGroup><PackageReference Include="Eldan.TypeExtensions" Version="*" /><PackageReference Include="Eldan.Logger-2.3" Version="*" /><PackageReference Include="Eldan.ImageProcessing" Version="*" /></ItemGroup></Project>
+  </Project> 

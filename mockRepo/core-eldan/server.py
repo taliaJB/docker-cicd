@@ -97,8 +97,20 @@ def process_job(job_id, jobs_list, processed_jobs):
 def add_dependency_to_csproj(job_id, job_name, dependencies, jobs_list):
     csproj_path = f'./mockRepo/core-eldan/src/{job_name}/real/{job_name}/Eldan.{job_name}.csproj'
     ET.register_namespace('', 'http://schemas.microsoft.com/developer/msbuild/2003')
-    
-    tree = ET.parse(csproj_path)
+    try:
+        tree = ET.parse(csproj_path)
+        # if file not found , check if it's a website with a file website,publishproj
+    except FileNotFoundError as e:
+        print(f"File: {csproj_path} not found. Checking for website publish profile...")
+        csproj_path = f'./mockRepo/core-eldan/src/{job_name}/real/{job_name}/website.Publish.csproj'
+        try:
+            tree = ET.parse(csproj_path)
+        except FileNotFoundError as e:
+            print(f"File: {csproj_path} not found. Skipping adding dependencies.")
+            return
+
+
+        
     root = tree.getroot()
     
     # Find the last ItemGroup that contains PackageReference

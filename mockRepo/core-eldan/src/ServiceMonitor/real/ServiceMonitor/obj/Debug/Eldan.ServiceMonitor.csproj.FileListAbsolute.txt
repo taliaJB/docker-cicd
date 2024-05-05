@@ -1,0 +1,8 @@
+C:\Main\dlls\Eldan.ServiceMonitor.dll.config
+C:\Main\dlls\Eldan.ServiceMonitor.dll
+C:\Main\dlls\Eldan.ServiceMonitor.pdb
+C:\Main\Eldan.ServiceMonitor\Eldan.ServiceMonitor\obj\Debug\Eldan.ServiceMonitor.csproj.CoreCompileInputs.cache
+C:\Main\Eldan.ServiceMonitor\Eldan.ServiceMonitor\obj\Debug\Eldan.ServiceMonitor.csproj.CopyComplete
+C:\Main\Eldan.ServiceMonitor\Eldan.ServiceMonitor\obj\Debug\Eldan.ServiceMonitor.dll
+C:\Main\Eldan.ServiceMonitor\Eldan.ServiceMonitor\obj\Debug\Eldan.ServiceMonitor.pdb
+C:\Main\Eldan.ServiceMonitor\Eldan.ServiceMonitor\obj\Debug\Eldan.ServiceMonitor.csproj.AssemblyReference.cache

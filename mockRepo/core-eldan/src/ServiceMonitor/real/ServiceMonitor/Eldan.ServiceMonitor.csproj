@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Eldan.ServiceMonitor</RootNamespace>
+    <AssemblyName>Eldan.ServiceMonitor</AssemblyName>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Eldan.LoggerBase" Version="*" />
+    <PackageReference Include="Eldan.LoggerFrm" Version="*" />
+    <PackageReference Include="Eldan.TypeExtensions" Version="*" />
+  </ItemGroup>
+
+  <!-- Include your source files -->
+  <ItemGroup>
+    <!-- <Compile Include="**\*.cs" Exclude="**\*generated.cs" /> -->
+    <None Include="app.config" />
+  </ItemGroup>
+
+  <!-- WCF metadata and service references -->
+  <ItemGroup>
+    <None Include="Connected Services\**\*.*" />
+  </ItemGroup>
+
+</Project>
+  <!-- <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /> -->

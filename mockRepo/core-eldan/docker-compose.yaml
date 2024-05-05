@@ -9,77 +9,77 @@
 
 
 services:
-  test:
-    build:
-      context: './src/test'
-      dockerfile: ${Dockerfile_Name}
-      args:
-        - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/image-processing:${BUILD_NUMBER}
+  # test:
+  #   build:
+  #     context: './src/test'
+  #     dockerfile: ${Dockerfile_Name}
+  #     args:
+  #       - NEXUS_API_KEY=${NEXUS_API_KEY}
+  #       - BUILD_NUMBER=${BUILD_NUMBER}
+  #   image: eldan/image-processing:${BUILD_NUMBER}
   
   ImageProcessing:
     build:
-      context: './src/ImageProcessing'
+      context: './src/ImageProcessing/real/ImageProcessing'
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
         - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/image-processing:${BUILD_NUMBER}
+    image: eldan/image-processing:${BUILD_NUMBER}-${BRANCH}
 
   SecurityBase:
     build:
-      context: './src/SecurityBase'
+      context: './src/SecurityBase/real/SecurityBase'
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
         - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/security-base:${BUILD_NUMBER}
+    image: eldan/security-base:${BUILD_NUMBER}-${BRANCH}
 
   ServicesSchedulerLib:
     build:
-      context: './src/ServicesSchedulerLib'
+      context: './src/ServicesSchedulerLib/real/ServicesSchedulerLib'
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
         - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/services-scheduler-lib:${BUILD_NUMBER}
+    image: eldan/services-scheduler-lib:${BUILD_NUMBER}-${BRANCH}
 
   SharedTypes:
     build:
-      context: './src/SharedTypes'
+      context: './src/SharedTypes/real/SharedTypes'
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
         - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/shared-types:${BUILD_NUMBER}
+    image: eldan/shared-types:${BUILD_NUMBER}-${BRANCH}
 
   TypeExtensions:
     build:
-      context: './src/TypeExtensions'
+      context: './src/TypeExtensions/real/TypeExtensions'
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
         - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/type-extensions:${BUILD_NUMBER}
+    image: eldan/type-extensions:${BUILD_NUMBER}-${BRANCH}
 
   SSOlogon:
     build:
-      context: './src/SSOlogon'
+      context: './src/SSOlogon/real/SSOlogon'
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
         - BUILD_NUMBER=${BUILD_NUMBER}
-    image: eldan/sso-logon:${BUILD_NUMBER}
+    image: eldan/sso-logon:${BUILD_NUMBER}-${BRANCH}
 
   QR:
       build:
-        context: './src/QR'
+        context: './src/QR/real/QR'
         dockerfile: ${Dockerfile_Name}
         args:
           - NEXUS_API_KEY=${NEXUS_API_KEY}
           - BUILD_NUMBER=${BUILD_NUMBER}
-      image: eldan/qr:${BUILD_NUMBER}
+      image: eldan/qr:${BUILD_NUMBER}-${BRANCH}
 
   FireflyBox:
     build:

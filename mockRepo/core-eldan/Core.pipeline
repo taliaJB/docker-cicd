@@ -11,6 +11,7 @@ pipeline {
         WORKSPACEFOLDER = './mockRepo/core-eldan/'
         NEXUS_API_KEY = '121d0000-0f4c-314a-8674-ca3f2db5847a'
         COMPOSE_PARALLEL_BUILD=2
+        
     }
 
     stages {
@@ -27,7 +28,7 @@ pipeline {
                     parallel(
                         eldanCore: {
                             // Run docker bake command in powershell
-                            def runCommand = 'cd ${WORKSPACEFOLDER} ; docker-compose --parallel=${env.COMPOSE_PARALLEL_BUILD} --build-arg NEXUS_API_KEY=${env.NEXUS_API_KEY} --build-arg BUILD_NUMBER=${env.BUILD_NUMBER}'
+                            def runCommand = 'cd ${WORKSPACEFOLDER} ; docker-compose --parallel=${env.COMPOSE_PARALLEL_BUILD} --build-arg NEXUS_API_KEY=${env.NEXUS_API_KEY} --build-arg BUILD_NUMBER=${env.BUILD_NUMBER} --build-arg BRANCH=${env.BRANCH_NAME} build'
                             bat "powershell -command \"${runCommand}\""                            
                         }
                             )

@@ -32,7 +32,7 @@ pipeline {
                 script {
                     echo "Workspace Folder: ${env.WORKSPACEFOLDER} and PARALLEL BUILD ${env.COMPOSE_PARALLEL_BUILD}"
                     def runCommand = "powershell -command \"cd '${env.WORKSPACEFOLDER}'; docker-compose --parallel ${env.COMPOSE_PARALLEL_BUILD} build --build-arg NEXUS_API_KEY='${env.NEXUS_API_KEY}' --build-arg BUILD_NUMBER='${env.BUILD_NUMBER}-${GIT_BRANCH}'\""
-                    bat runCommand
+                    // bat runCommand
                 }
             }
         }

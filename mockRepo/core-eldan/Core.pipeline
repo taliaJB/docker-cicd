@@ -33,6 +33,15 @@ pipeline {
                 }
             }
         }
+         stage('Matrix artifact build') {
+            steps {
+                script {
+                    echo "Workspace Folder: ${env.WORKSPACEFOLDER} "
+                    def runCommand = "powershell -command \"cd '${env.WORKSPACEFOLDER}'; python server.py\""
+                    bat runCommand
+                }
+            }
+        }
     }
 }
 

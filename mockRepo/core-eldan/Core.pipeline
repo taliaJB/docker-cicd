@@ -14,7 +14,7 @@ pipeline {
         // ensure you use double backslashes in Windows environments
         NEXUS_API_KEY = '121d0000-0f4c-314a-8674-ca3f2db5847a'
         NEXUS_URL = 'https://eldan-repo.devopshift.com/nexus'
-        COMPOSE_PARALLEL_BUILD=2
+        COMPOSE_PARALLEL_BUILD=3
         BUILD_NUMBER_BRANCH = "${env.BUILD_NUMBER}-${GIT_BRANCH}"
 
 

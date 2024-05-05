@@ -77,7 +77,7 @@ def process_job(job_id, jobs_list, processed_jobs):
     job_name_lower = job["Name"].lower()
     job_name = job["Name"]
     docker_build_command = f"cd ./mockRepo/core-eldan/src/{job_name}/real/{job_name}/ && " \
-                        f"docker build --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER=1.00.1 " \
+                        f"docker build --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER={BUILD_NUMBER}" \
                         f"-t {job_name_lower} -f DockerfileWindows ."
     # docker_build_command = "echo 123"
     try:
@@ -185,7 +185,7 @@ def main():
     print(f"NEXUS_API_KEY: {NEXUS_API_KEY}")
     print(f"NEXUS_URL: {NEXUS_URL}")
     print(f"BUILD_NUMBER: {BUILD_NUMBER}")
-    
+
     # Check if the NEXUS_API_KEY is valid
     print("Checking Nexus API Key...")
     check_nexus_api_key()

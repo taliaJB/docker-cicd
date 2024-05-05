@@ -102,7 +102,7 @@ def add_dependency_to_csproj(job_id, job_name, dependencies, jobs_list):
         # if file not found , check if it's a website with a file website,publishproj
     except FileNotFoundError as e:
         print(f"File: {csproj_path} not found. Checking for website publish profile...")
-        csproj_path = f'./mockRepo/core-eldan/src/{job_name}/real/{job_name}/website.Publish.csproj'
+        csproj_path = f'./mockRepo/core-eldan/src/{job_name}/real/{job_name}/website.publishproj'
         try:
             tree = ET.parse(csproj_path)
         except FileNotFoundError as e:

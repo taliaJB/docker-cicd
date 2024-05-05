@@ -48,6 +48,7 @@ def process_job(job_id, jobs_list, processed_jobs):
         # os.mkdir(f'./mockRepo/core-eldan/src/{job["Name"]}')
         # copy_files(job_id, job["Name"])
         print(f'Project folder dosent exits skipping')
+        return
     # else:
     #     copy_files(job_id, job["Name"])
     # Log if job has dependencies

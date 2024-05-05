@@ -1,0 +1,6 @@
+**Core.pipeline
+**docker-bake.hcl
+**docker-compose.yml
+**Dockerfile*
+**Dockerfile.*
+./server.py

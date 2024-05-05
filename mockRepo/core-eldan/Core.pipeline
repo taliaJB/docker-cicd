@@ -28,7 +28,7 @@ pipeline {
                     parallel(
                         eldanCore: {
                             // Run docker bake command in powershell
-                            def runCommand = 'cd ${WORKSPACEFOLDER} ; docker-compose --parallel=${env.COMPOSE_PARALLEL_BUILD} --build-arg NEXUS_API_KEY=${env.NEXUS_API_KEY} --build-arg BUILD_NUMBER=${env.BUILD_NUMBER} --build-arg BRANCH=${env.BRANCH_NAME} build'
+                            def runCommand = 'cd ${WORKSPACEFOLDER} ; docker-compose --parallel=${env.COMPOSE_PARALLEL_BUILD} build --build-arg NEXUS_API_KEY=${env.NEXUS_API_KEY} --build-arg BUILD_NUMBER=${env.BUILD_NUMBER} --build-arg BRANCH=${env.BRANCH_NAME}'
                             bat "powershell -command \"${runCommand}\""                            
                         }
                             )

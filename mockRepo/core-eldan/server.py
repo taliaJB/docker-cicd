@@ -79,6 +79,8 @@ def process_job(job_id, jobs_list, processed_jobs):
     docker_build_command = f"cd ./mockRepo/core-eldan/src/{job_name}/real/{job_name}/ && " \
                         f"docker build --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER={BUILD_NUMBER}" \
                         f"-t {job_name_lower} -f DockerfileWindows ."
+    # Print the docker build command
+    print(f"Docker build command for JobID: {job_id} ('{job['Name']}'): {docker_build_command}")
     # docker_build_command = "echo 123"
     try:
         print(f"Running docker build command for JobID: {job_id} ('{job['Name']}')...")

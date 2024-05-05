@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 # Set Environment Variables
 NEXUS_API_KEY = os.environ.get('NEXUS_API_KEY', '121d0000-0f4c-314a-8674-ca3f2db5847a')
 NEXUS_URL = os.environ.get('NEXUS_URL', 'https://eldan-repo.devopshift.com/nexus')
-BUILD_NUMBER = os.environ.get('BUILD_NUMBER' , '1.00.1')
+BUILD_NUMBER = os.environ.get('BUILD_NUMBER_BRANCH' , '1.00.1-master')
 
 # Check if we are able to connect to nexus api with the NEXUS_API_KEY and if not abort the process
 def check_nexus_api_key():
@@ -180,7 +180,14 @@ def copy_files(job_id, job_name):
 
 # Main logic
 def main():
+    # Print environment variables
+    print("Environment Variables:")
+    print(f"NEXUS_API_KEY: {NEXUS_API_KEY}")
+    print(f"NEXUS_URL: {NEXUS_URL}")
+    print(f"BUILD_NUMBER: {BUILD_NUMBER}")
+    
     # Check if the NEXUS_API_KEY is valid
+    print("Checking Nexus API Key...")
     check_nexus_api_key()
     # Initialize gspread client and open spreadsheet
     service_account_file_paths = ['./mockRepo/core-eldan/service-account.json', '/app/service-account.json', './service-account.json']
@@ -193,6 +200,7 @@ def main():
         exit(1)
     
     # gc = gspread.service_account(filename='./mockRepo/core-eldan/service-account.json')
+    print("Getting job list from Google Sheets... ")
     spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1qkWADi9XRcHSu3RcpvYGwJ2Jr6UCKi-Xt6KeevvItWY/edit?usp=sharing'
     sh = gc.open_by_url(spreadsheet_url)
     worksheet = sh.sheet1

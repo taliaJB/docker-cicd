@@ -25,8 +25,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${BRANCH}
-    image: eldan/image-processing:${BUILD_NUMBER}-${BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
+    image: eldan/image-processing:${BUILD_NUMBER}-${GIT_BRANCH}
 
   SecurityBase:
     build:

@@ -74,7 +74,7 @@ def process_job(job_id, jobs_list, processed_jobs):
     # Docker command: docker build  --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER=1.00.1 -t {jobname} -f dockerfile .
     job_name_lower = job["Name"].lower()
     job_name = job["Name"]
-    docker_build_command = f"cd ./mockRepo/core-eldan/src/{job_name}/ && docker build --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER=1.00.1 -t {job_name_lower} -f dockerfile ."
+    docker_build_command = f"cd ./mockRepo/core-eldan/src/{job_name}/real/{job_name}/ && docker build --build-arg NEXUS_API_KEY={NEXUS_API_KEY} --build-arg BUILD_NUMBER=1.00.1 -t {job_name_lower} -f DockerfileWindows ."
     try:
         print(f"Running docker build command for JobID: {job_id} ('{job['Name']}')...")
         output = subprocess.check_output(docker_build_command, shell=True, text=True)
@@ -92,7 +92,7 @@ def process_job(job_id, jobs_list, processed_jobs):
     processed_jobs.add(job_id)
 
 def add_dependency_to_csproj(job_id, job_name, dependencies, jobs_list):
-    csproj_path = f'./mockRepo/core-eldan/src/{job_name}/Core.{job_name}.csproj'
+    csproj_path = f'./mockRepo/core-eldan/src/{job_name}/real/{job_name}/Eldan.{job_name}.csproj'
     ET.register_namespace('', 'http://schemas.microsoft.com/developer/msbuild/2003')
     
     tree = ET.parse(csproj_path)
@@ -151,7 +151,7 @@ def copy_files(job_id, job_name):
             if file.name == "Core.DataAccess.csproj":
                 # change the file name to match the job name
                 f.write(filedata.replace('DataAccess', job_name))
-                os.rename(file, file.parent / f"Core.{job_name}.csproj")
+                os.rename(file, file.parent / f"Eldan.{job_name}.csproj")
             else:
              f.write(filedata)
 

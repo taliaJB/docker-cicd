@@ -45,16 +45,17 @@ def process_job(job_id, jobs_list, processed_jobs):
         print(f"JobID: {job_id} has no name. Skipping...")
         return
     elif job["Name"] not in os.listdir('./mockRepo/core-eldan/src/'):
-        os.mkdir(f'./mockRepo/core-eldan/src/{job["Name"]}')
-        copy_files(job_id, job["Name"])
-    else:
-        copy_files(job_id, job["Name"])
+        # os.mkdir(f'./mockRepo/core-eldan/src/{job["Name"]}')
+        # copy_files(job_id, job["Name"])
+        print(f'Project folder dosent exits skipping')
+    # else:
+    #     copy_files(job_id, job["Name"])
     # Log if job has dependencies
     if job["Depends"] != "NONE":
         print(f"JobID: {job_id} ('{job['Name']}') has dependencies: {job['Depends']}. Processing dependencies first...")
         dependencies = [int(dep) for dep in job["Depends"].split(", ")]
         # Call add dependency function to add the dependency to the Core.{job[Name]}.csproj file base on the job_name
-        print(f"Adding dependency for JobID: {job_id} ('{job['Name']}') to Core.{job['Name']}.csproj file...")
+        print(f"Adding dependency for JobID: {job_id} ('{job['Name']}') to Eldan.{job['Name']}.csproj file...")
         add_dependency_to_csproj(job_id, job["Name"], dependencies, jobs_list)
         for dep in dependencies:
             # Run the process_job function for the dependency
@@ -114,7 +115,7 @@ def add_dependency_to_csproj(job_id, job_name, dependencies, jobs_list):
         # Lookup job name using job_id from jobs_list
         job_info = next((item for item in jobs_list if item["JobID"] == dep), None)
         if job_info:
-            dep_name = f"Core.{job_info['Name']}"
+            dep_name = f"Eldan.{job_info['Name']}"
             if dep_name not in existing_packages:
                 ET.SubElement(item_group, '{http://schemas.microsoft.com/developer/msbuild/2003}PackageReference', attrib={'Include': dep_name, 'Version': '*'})
                 print(f"Added {dep_name} to {csproj_path}.")
@@ -148,7 +149,7 @@ def copy_files(job_id, job_name):
         filedata = filedata.replace('DataAccess', job_name)
 
         with open(file, 'w') as f:
-            if file.name == "Core.DataAccess.csproj":
+            if file.name == "Eldan.DataAccess.csproj":
                 # change the file name to match the job name
                 f.write(filedata.replace('DataAccess', job_name))
                 os.rename(file, file.parent / f"Eldan.{job_name}.csproj")

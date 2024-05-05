@@ -2,7 +2,7 @@
 # Linux:
 #BUILD_NUMBER=1.0.0 Dockerfile_Name=Dockerfile NEXUS_API_KEY=121d0000-0f4c-314a-8674-ca3f2db5847a docker-compose build
 # Windows Powershell 
-# $env:BUILD_NUMBER = "1.0.0"
+# $env:BUILD_NUMBER = "1.0.0-master"
 # $env:Dockerfile_Name = "DockerfileWindows"
 # $env:NEXUS_API_KEY = "121d0000-0f4c-314a-8674-ca3f2db5847a"
 # $env:GIT_BRANCH="master"
@@ -25,8 +25,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-    image: eldan/image-processing:${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/image-processing:${BUILD_NUMBER}
 
   SecurityBase:
     build:
@@ -34,8 +34,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-    image: eldan/security-base:${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/security-base:${BUILD_NUMBER}
 
   ServicesSchedulerLib:
     build:
@@ -43,8 +43,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-    image: eldan/services-scheduler-lib:${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/services-scheduler-lib:${BUILD_NUMBER}
 
   SharedTypes:
     build:
@@ -52,8 +52,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-    image: eldan/shared-types:${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/shared-types:${BUILD_NUMBER}
 
   TypeExtensions:
     build:
@@ -61,8 +61,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-    image: eldan/type-extensions:${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/type-extensions:${BUILD_NUMBER}
 
   SSOlogon:
     build:
@@ -70,8 +70,8 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-    image: eldan/sso-logon:${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
+    image: eldan/sso-logon:${BUILD_NUMBER}
 
   QR:
       build:
@@ -79,8 +79,8 @@ services:
         dockerfile: ${Dockerfile_Name}
         args:
           - NEXUS_API_KEY=${NEXUS_API_KEY}
-          - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
-      image: eldan/qr:${BUILD_NUMBER}-${GIT_BRANCH}
+          - BUILD_NUMBER=${BUILD_NUMBER}
+      image: eldan/qr:${BUILD_NUMBER}
 
   FireflyBox:
     build:
@@ -88,5 +88,5 @@ services:
       dockerfile: ${Dockerfile_Name}
       args:
         - NEXUS_API_KEY=${NEXUS_API_KEY}
-        - BUILD_NUMBER=${BUILD_NUMBER}-${GIT_BRANCH}
+        - BUILD_NUMBER=${BUILD_NUMBER}
     image: eldan/firefly-box:${BUILD_NUMBER}

@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -22,12 +23,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <!-- Nexus nuget -->
+  
   <ItemGroup>
-    <PackageReference Include="Eldan.ImageProcessing" Version="*" />
-    <PackageReference Include="Eldan.Logger" Version="*" />
-    <PackageReference Include="Eldan.TypeExtensions" Version="*" />
-    <!--3RD PARTY  -->
+    
+    
     <Reference Include="Microsoft.Web.Administration">
       <Culture>neutral</Culture>
       <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
@@ -60,4 +59,4 @@
   </ItemGroup>
 
 
-</Project>
+<ItemGroup><PackageReference Include="Eldan.TypeExtensions" Version="*" /><PackageReference Include="Eldan.Logger-2.3" Version="*" /><PackageReference Include="Eldan.ImageProcessing" Version="*" /></ItemGroup></Project>

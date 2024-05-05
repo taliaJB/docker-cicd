@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -15,10 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- <Compile Include="**\*.cs" Exclude="**\*.generated.cs" /> -->
+    
     <Content Include="SchedulerConfig.xml" />
     <Content Include="TaskSchedulerTemplate.xml" />
     <None Include="App.config" />
   </ItemGroup>
 
-</Project>
+<ItemGroup><PackageReference Include="Eldan.TypeExtensions" Version="*" /><PackageReference Include="Eldan.Logger-2.3" Version="*" /><PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" /></ItemGroup></Project>

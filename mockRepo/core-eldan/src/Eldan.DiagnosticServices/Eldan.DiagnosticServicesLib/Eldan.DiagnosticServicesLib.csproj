@@ -9,6 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Eldan.DiagnosticServicesLib</RootNamespace>
     <AssemblyName>Eldan.DiagnosticServicesLib</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

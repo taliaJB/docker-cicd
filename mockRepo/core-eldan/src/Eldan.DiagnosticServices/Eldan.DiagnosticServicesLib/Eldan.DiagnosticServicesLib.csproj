@@ -32,31 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- <Reference Include="Eldan.DataAccess"> -->
-      <!-- <HintPath>..\..\Dlls\Eldan.DataAccess.dll</HintPath> -->
-    <!-- </Reference> -->
-    <!-- Getting from nexus using NuGet Config file -->
-	<PackageReference Include="Eldan.DataAccess" Version="*" />
-	<PackageReference Include="Eldan.TypeExtensions" Version="*" />
-  <PackageReference Include="Eldan.LoggerBase" Version="*" />
-  <PackageReference Include="Eldan.LoggerFrm" Version="*" />
-  <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
-	<!-- End nexus -->
-    <!-- <Reference Include="Eldan.LoggerBase">
-      <HintPath>..\..\Dlls\Eldan.LoggerBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Eldan.LoggerFrm">
-      <HintPath>..\..\Dlls\Eldan.LoggerFrm.dll</HintPath>
-    </Reference> -->
-    <!-- <Reference Include="Eldan.ServiceMonitor">
-      <HintPath>..\..\Dlls\Eldan.ServiceMonitor.dll</HintPath>
-    </Reference> -->
-    <!-- <Reference Include="Eldan.ServicesSchedulerLib">
-      <HintPath>..\..\Dlls\Eldan.ServicesSchedulerLib.dll</HintPath>
-    </Reference> -->
-    <!-- <Reference Include="Eldan.TypeExtensions"> -->
-      <!-- <HintPath>..\..\Dlls\Eldan.TypeExtensions.dll</HintPath> -->
-    <!-- </Reference> -->
+    <!-- References -->
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -66,6 +42,15 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <!-- End References -->
+
+    <!-- Package References -->
+    <PackageReference Include="Eldan.DataAccess" Version="2.0.0" />
+    <PackageReference Include="Eldan.TypeExtensions" Version="*" />
+    <PackageReference Include="Eldan.LoggerBase" Version="*" />
+    <PackageReference Include="Eldan.LoggerFrm" Version="*" />
+    <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
+    <!-- End Package References -->
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarsDiagnostic\CarData.cs" />
@@ -80,6 +65,5 @@
     <Compile Include="CarsDiagnostic\SupplierPointer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

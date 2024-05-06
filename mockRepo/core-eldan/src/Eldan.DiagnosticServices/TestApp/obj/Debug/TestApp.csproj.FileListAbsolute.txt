@@ -1,0 +1,10 @@
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\bin\Debug\TestApp.exe.config
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\bin\Debug\TestApp.exe
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\bin\Debug\TestApp.pdb
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.Form1.resources
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.exe
+C:\Sources\Branches\CarsDiagnostic\Eldan.DiagnosticServices\TestApp\obj\Debug\TestApp.pdb

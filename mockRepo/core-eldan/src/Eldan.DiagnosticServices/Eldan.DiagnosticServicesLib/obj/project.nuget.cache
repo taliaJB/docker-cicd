@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "pBsPNKBjIkS5I/bDiuxd+rYXYRfUqwcnMa98edlSDN/967+lm8R1XpCAJKjeZ+AyWlBc1gS1ym81hKM1HqkBBw==",
+  "success": true,
+  "projectFilePath": "C:\\Sources\\Branches\\CarsDiagnosticTestDevOps\\Eldan.DiagnosticServices\\Eldan.DiagnosticServicesLib\\Eldan.DiagnosticServicesLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\eldan.dataaccess\\120.0.0-eldan\\eldan.dataaccess.120.0.0-eldan.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\eldan.securitybase\\2.0.0\\eldan.securitybase.2.0.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\eldan.typeextensions\\116.0.0-eldan\\eldan.typeextensions.116.0.0-eldan.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\system.security.cryptography.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

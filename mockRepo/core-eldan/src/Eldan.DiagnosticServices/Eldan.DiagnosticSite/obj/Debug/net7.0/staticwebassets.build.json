@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "leBTMqWKdz5SDrTVNZKHlgVooNvaG4PWzJScGCJeMHA=",
+  "Source": "Eldan.DiagnosticSite",
+  "BasePath": "_content/Eldan.DiagnosticSite",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Eldan.DiagnosticSite.props" />
+</Project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="4c61cce0-628a-4ca6-9fc9-6c397d82b09d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59041/CarsDiagnosticService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CarsDiagnosticService.disco" MetadataType="Disco" ID="f9586ad5-4950-488b-92d5-9bd01056edbd" SourceId="1" SourceUrl="http://localhost:59041/CarsDiagnosticService.svc?disco" />
+    <MetadataFile FileName="CarsDiagnosticService.xsd" MetadataType="Schema" ID="948f977c-39ff-47b0-adb1-a4d964df8db3" SourceId="1" SourceUrl="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CarsDiagnosticService1.xsd" MetadataType="Schema" ID="1348b473-f070-435f-adc7-747c28e2d940" SourceId="1" SourceUrl="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CarsDiagnosticService2.xsd" MetadataType="Schema" ID="1bc971c5-2759-4951-954d-b9778df64845" SourceId="1" SourceUrl="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CarsDiagnosticService3.xsd" MetadataType="Schema" ID="4d66b8c7-b6d1-4807-841e-2c6e6d1abaf8" SourceId="1" SourceUrl="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CarsDiagnosticService.wsdl" MetadataType="Wsdl" ID="1fd66f48-b466-4442-a269-42d2facce4c5" SourceId="1" SourceUrl="http://localhost:59041/CarsDiagnosticService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

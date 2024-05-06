@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="CarsDiagnosticService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:59041/CarsDiagnosticService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Eldan.DiagnosticServicesLib.CarsDiagnostic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICarsDiagnosticService_UpdateSuppliersData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSuppliersData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdateSuppliersData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSuppliersDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdateSupplierData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSupplierData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdateSupplierData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSupplierDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdateEdiData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEdiData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdatePointerData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePointerData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdateIturanData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIturanData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_UpdateInetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInetData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_GetCarData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarData" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_GetCarData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_CalibrateSupplierCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalibrateSupplierCar" />
+  </wsdl:message>
+  <wsdl:message name="ICarsDiagnosticService_CalibrateSupplierCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalibrateSupplierCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScheduler_Refresh_InputMessage">
+    <wsdl:part name="parameters" element="tns:Refresh" />
+  </wsdl:message>
+  <wsdl:message name="IScheduler_Refresh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScheduler_Flush_InputMessage">
+    <wsdl:part name="parameters" element="tns:Flush" />
+  </wsdl:message>
+  <wsdl:message name="IScheduler_Flush_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FlushResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICarsDiagnosticService">
+    <wsdl:operation name="UpdateSuppliersData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateSuppliersData" message="tns:ICarsDiagnosticService_UpdateSuppliersData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateSuppliersDataResponse" message="tns:ICarsDiagnosticService_UpdateSuppliersData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupplierData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateSupplierData" message="tns:ICarsDiagnosticService_UpdateSupplierData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateSupplierDataResponse" message="tns:ICarsDiagnosticService_UpdateSupplierData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEdiData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateEdiData" message="tns:ICarsDiagnosticService_UpdateEdiData_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePointerData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdatePointerData" message="tns:ICarsDiagnosticService_UpdatePointerData_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIturanData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateIturanData" message="tns:ICarsDiagnosticService_UpdateIturanData_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/UpdateInetData" message="tns:ICarsDiagnosticService_UpdateInetData_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/GetCarData" message="tns:ICarsDiagnosticService_GetCarData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarsDiagnosticService/GetCarDataResponse" message="tns:ICarsDiagnosticService_GetCarData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalibrateSupplierCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarsDiagnosticService/CalibrateSupplierCar" message="tns:ICarsDiagnosticService_CalibrateSupplierCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarsDiagnosticService/CalibrateSupplierCarResponse" message="tns:ICarsDiagnosticService_CalibrateSupplierCar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IScheduler">
+    <wsdl:operation name="Refresh">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScheduler/Refresh" message="tns:IScheduler_Refresh_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScheduler/RefreshResponse" message="tns:IScheduler_Refresh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Flush">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScheduler/Flush" message="tns:IScheduler_Flush_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScheduler/FlushResponse" message="tns:IScheduler_Flush_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICarsDiagnosticService" type="tns:ICarsDiagnosticService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateSuppliersData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/UpdateSuppliersData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupplierData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/UpdateSupplierData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEdiData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/UpdateEdiData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePointerData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/UpdatePointerData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIturanData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/UpdateIturanData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInetData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/UpdateInetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarData">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/GetCarData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalibrateSupplierCar">
+      <soap:operation soapAction="http://tempuri.org/ICarsDiagnosticService/CalibrateSupplierCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IScheduler" type="tns:IScheduler">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Refresh">
+      <soap:operation soapAction="http://tempuri.org/IScheduler/Refresh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Flush">
+      <soap:operation soapAction="http://tempuri.org/IScheduler/Flush" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarsDiagnosticService">
+    <wsdl:port name="BasicHttpBinding_ICarsDiagnosticService" binding="tns:BasicHttpBinding_ICarsDiagnosticService">
+      <soap:address location="http://localhost:59041/CarsDiagnosticService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IScheduler" binding="tns:BasicHttpBinding_IScheduler">
+      <soap:address location="http://localhost:59041/CarsDiagnosticService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

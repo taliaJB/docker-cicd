@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>Eldan.DiagnosticServicesLib</RootNamespace>
+    <AssemblyName>Eldan.DiagnosticServicesLib</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+ 
+ 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+ 
+ 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+ 
+ 
+  <ItemGroup>
+    <PackageReference Include="Eldan.DataAccess" Version="120.0.0-eldan" />
+    <PackageReference Include="Eldan.TypeExtensions" Version="116.0.0-eldan" />
+    <!-- Add other package references if needed -->
+  </ItemGroup>
+ 
+ 
+  <ItemGroup>
+    <Reference Include="Eldan.LoggerBase">
+      <HintPath>..\..\Dlls\Eldan.LoggerBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Eldan.LoggerFrm">
+      <HintPath>..\..\Dlls\Eldan.LoggerFrm.dll</HintPath>
+    </Reference>
+    <Reference Include="Eldan.ServiceMonitor">
+      <HintPath>..\..\Dlls\Eldan.ServiceMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Eldan.ServicesSchedulerLib">
+      <HintPath>..\..\Dlls\Eldan.ServicesSchedulerLib.dll</HintPath>
+    </Reference>
+    <!-- <Reference Include="Eldan.TypeExtensions"> -->
+      <!-- <HintPath>..\..\Dlls\Eldan.TypeExtensions.dll</HintPath> -->
+    <!-- </Reference> -->
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+ 
+ 
+  <ItemGroup>
+    <Compile Include="CarsDiagnostic\CarData.cs" />
+    <Compile Include="CarsDiagnostic\CarsDiagnosticBL.cs" />
+    <Compile Include="CarsDiagnostic\CarsDiagnosticBLEvents.cs" />
+    <Compile Include="CarsDiagnostic\CarsDiagnosticDAL.cs" />
+    <Compile Include="CarsDiagnostic\CommonData.cs" />
+    <Compile Include="CarsDiagnostic\SupplierEdi.cs" />
+    <Compile Include="CarsDiagnostic\SupplierIturan.cs" />
+    <Compile Include="CarsDiagnostic\SupplierInet.cs" />
+    <Compile Include="CarsDiagnostic\Supplier.cs" />
+    <Compile Include="CarsDiagnostic\SupplierPointer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <!-- Add other source files if needed -->
+  </ItemGroup>
+ 
+ 
+ </Project>

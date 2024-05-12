@@ -1,0 +1,29 @@
+# Use the official Microsoft .NET SDK image to build the application
+FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build-env
+WORKDIR /app
+
+# Copy entire project directory to /app
+COPY . ./
+
+# Restore NuGet packages necessary for the project
+# RUN nuget restore
+
+# # Build the project in Release configuration and output to out directory
+# RUN msbuild /p:Configuration=Release /p:OutputPath=out /m
+
+# # Optionally: Copy DLLs from other builds if those builds are also part of the Docker context
+# # COPY --from=eldan/type-extensions /app/TypeExtensions.dll ./out/
+
+# # If there is a .nuspec file, generate a NuGet package
+# ARG BUILD_NUMBER
+# RUN msbuild /t:pack /p:PackageVersion=$BUILD_NUMBER -o nugets
+
+# # Upload NuGet package to Nexus repository
+# ARG NEXUS_API_KEY
+# RUN nuget push "nugets\*.nupkg" -Source "https://eldan-repo.devopshift.com/nexus/repository/nuget-hosted/" -ApiKey $NEXUS_API_KEY
+
+# # Generate the runtime image
+# FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8 AS runtime
+# WORKDIR /app
+# COPY --from=build-env /app/out .
+# ENTRYPOINT ["dotnet", "Eldan.DiagnosticServicesLib.dll"]

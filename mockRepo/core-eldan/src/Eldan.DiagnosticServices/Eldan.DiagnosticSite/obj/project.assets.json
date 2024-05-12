@@ -1258,29 +1258,6 @@
         "runtime": {
           "bin/placeholder/Eldan.DiagnosticSiteLib.dll": {}
         }
-      },
-      "Eldan.Logger/2.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Eldan.LoggerBase": "1.0.0",
-          "Microsoft.Extensions.Configuration": "7.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Eldan.Logger.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Eldan.Logger.dll": {}
-        }
-      },
-      "Eldan.LoggerBase/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Eldan.LoggerBase.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Eldan.LoggerBase.dll": {}
-        }
       }
     }
   },
@@ -3975,22 +3952,12 @@
       "type": "project",
       "path": "../Eldan.DiagnosticSiteLib/Eldan.DiagnosticSiteLib.csproj",
       "msbuildProject": "../Eldan.DiagnosticSiteLib/Eldan.DiagnosticSiteLib.csproj"
-    },
-    "Eldan.Logger/2.0.0": {
-      "type": "project",
-      "path": "../../Eldan.Logger/NewVersion/Eldan.Logger/Eldan.Logger/Eldan.Logger.csproj",
-      "msbuildProject": "../../Eldan.Logger/NewVersion/Eldan.Logger/Eldan.Logger/Eldan.Logger.csproj"
-    },
-    "Eldan.LoggerBase/1.0.0": {
-      "type": "project",
-      "path": "../../Eldan.Logger/Eldan.LoggerBase/Eldan.LoggerBase.csproj",
-      "msbuildProject": "../../Eldan.Logger/Eldan.LoggerBase/Eldan.LoggerBase.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj",
       "Eldan.DiagnosticSiteLib >= 1.0.0",
-      "Eldan.Logger >= 2.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.17",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.Configuration.ConfigurationManager >= 7.0.0"
@@ -4003,11 +3970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
+      "projectUniqueName": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
       "projectName": "Eldan.DiagnosticSite",
-      "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
+      "projectPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
       "packagesPath": "C:\\Users\\yosi.zi\\.nuget\\packages\\",
-      "outputPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\obj\\",
+      "outputPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4027,11 +3994,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
-              "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj"
+            "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
+              "projectPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj"
             },
-            "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj": {
-              "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj"
+            "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj": {
+              "projectPath": "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj"
             }
           }
         }
@@ -4081,5 +4048,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

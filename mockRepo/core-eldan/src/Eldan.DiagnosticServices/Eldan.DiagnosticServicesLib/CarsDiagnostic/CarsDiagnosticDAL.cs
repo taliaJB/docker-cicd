@@ -15,13 +15,7 @@ namespace Eldan.DiagnosticServicesLib.CarsDiagnostic
             return new List<int>();
         }
 
-        protected struct CarSupplier
-        {
-            public int CarNumber;
-            public EnmSupplierName supplierName;
-        }
-
-        protected List<CarSupplier> GetCarsSupplier(List<int> carNumber) 
+        internal List<CarSupplier> GetCarsSupplier(List<int> carNumber) 
         {
             // TO DO: needs to implement
             return new List<CarSupplier> { new CarSupplier { CarNumber = 111, supplierName = EnmSupplierName.Edi },

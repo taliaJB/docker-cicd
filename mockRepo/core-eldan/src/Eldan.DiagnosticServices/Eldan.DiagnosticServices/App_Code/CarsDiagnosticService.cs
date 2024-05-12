@@ -17,28 +17,28 @@ public class CarsDiagnosticService : ICarsDiagnosticService, IScheduler
 
     public void UpdateEdiData(EdiDiagnosticData ediDiagnosticData, string LoggerSessionID)
     {
-        SetLogger();
+        SetLogger(false);
         _logger.LoggerSessionID = LoggerSessionID;
         _logger.DoAction(_BL.UpdateEdiData, ediDiagnosticData);
     }
 
     public void UpdatePointerData(PointerDiagnosticData pointerDiagnosticData, string LoggerSessionID)
     {
-        SetLogger();
+        SetLogger(false);
         _logger.LoggerSessionID = LoggerSessionID;
         _logger.DoAction(_BL.UpdatePointerData, pointerDiagnosticData);
     }
 
     public void UpdateIturanData(IturanDiagnosticData ituranDiagnosticData, string LoggerSessionID)
     {
-        SetLogger();
+        SetLogger(false);
         _logger.LoggerSessionID = LoggerSessionID;
         _logger.DoAction(_BL.UpdateIturanData, ituranDiagnosticData);
     }
 
     public void UpdateInetData(InetDiagnosticData inetDiagnosticData, string LoggerSessionID)
     {
-        SetLogger();
+        SetLogger(false);
         _logger.LoggerSessionID = LoggerSessionID;
         _logger.DoAction(_BL.UpdateInetData, inetDiagnosticData);
     }
@@ -84,9 +84,20 @@ public class CarsDiagnosticService : ICarsDiagnosticService, IScheduler
 
     private void SetLogger(string key)
     {
+        SetLogger(key, true);
+    }
+
+    private void SetLogger(bool throwExceptionWhenError)
+    {
+        SetLogger(CarsDiagnosticBL.LOGGER_FILE_PATH_ONLINE_KEY, throwExceptionWhenError);
+    }
+
+    private void SetLogger(string key, bool throwExceptionWhenError)
+    {
         _logger = new LoggerFrm(CarsDiagnosticBL.SERVICE_NAME);
         _logger.LoggerFilePathKey = key;
         _logger.LogCreateInstance = false;
+        _logger.ThrowExceptionWhenError = throwExceptionWhenError;
         _logger.BindEvents(new CarsDiagnosticBLEvents());
         _BL = _logger.CreateInstance<CarsDiagnosticBL>();
     }

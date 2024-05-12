@@ -30,23 +30,24 @@ namespace Eldan.DiagnosticServicesLib.CarsDiagnostic
         private void GetAndUpdateSupplierData(Supplier supplier)
         {
             supplier.Logger = _logger;
-            Thread tr = new Thread(() => supplier.GetAndUpdateSupplierData());
+            Thread tr = new Thread(() => supplier.GetAndUpdateSupplierData(null, throwException: false, isPullingRequested: true));
             tr.Start();
         }
 
         public void UpdateSupplierData(List<int> carsNumber)
         {
-            List<CarSupplier> carsSupplier = GetCarsSupplier(carsNumber);
+            CarsSupplier carsSupplier = CarsSupplier.CreateInstace(carsNumber);
             foreach (CarSupplier carSupplier in carsSupplier)
             {
                 Supplier supplier = GetSupplier(carSupplier.supplierName);
-                supplier.GetAndUpdateSupplierData();
+                supplier.GetAndUpdateSupplierData(carsSupplier.GetCarsNumber(carSupplier.supplierName), throwException: false, isPullingRequested: false);
             }
         }
 
         public void CalibrateSupplierCar(int carNumber, int KM)
         {
-            List<CarSupplier> carsSupplier = GetCarsSupplier(new List<int> { carNumber });
+            CarsSupplier carsSupplier = CarsSupplier.CreateInstace(new List<int> { carNumber });
+
             if (carsSupplier.Count == 0)
                 throw new Exception($"CarsDiagnosticBL:CalibrateSupplierCar - no supplier founded for car number: {carNumber}");
 

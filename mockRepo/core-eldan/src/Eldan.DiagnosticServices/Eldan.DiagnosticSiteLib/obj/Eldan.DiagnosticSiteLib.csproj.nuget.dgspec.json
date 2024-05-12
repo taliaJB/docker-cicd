@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {}
+    "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {}
   },
   "projects": {
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
+    "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
+        "projectUniqueName": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
         "projectName": "Eldan.DiagnosticSiteLib",
-        "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
+        "projectPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
         "packagesPath": "C:\\Users\\yosi.zi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\obj\\",
+        "outputPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

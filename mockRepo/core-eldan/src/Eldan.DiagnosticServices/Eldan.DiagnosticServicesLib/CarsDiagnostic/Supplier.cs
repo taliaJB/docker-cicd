@@ -44,19 +44,19 @@ namespace Eldan.DiagnosticServicesLib.CarsDiagnostic
             UpdateCarsDiagnostic(carsData.First());
         }
 
-        internal void GetAndUpdateSupplierData()
+        internal void GetAndUpdateSupplierData(List<int> carsNumber, bool throwException, bool isPullingRequested)
         {
-            if (!PullingSupported)
+            if (!PullingSupported && isPullingRequested)
             {
                 _logger.Write($"SuppliersEngine.GetAndUpdateSupplierData - Supplier {SupplierName} dose not support pulling data");
                 return;
             }
 
             // Get supplier diagnostic data
-            List<CarData> carsData = GetSupplierData(RequestSupplierData, TransformData);
+            List<CarData> carsData = GetSupplierData(RequestSupplierData, TransformData, carsNumber, throwException);
 
             // Update supplier diagnostic data
-            UpdateCarsDiagnostic(carsData, false);
+            UpdateCarsDiagnostic(carsData, throwException);
         }
 
         internal virtual void CalibrateSupplierCar(int carNumber, int KM)
@@ -73,7 +73,7 @@ namespace Eldan.DiagnosticServicesLib.CarsDiagnostic
         private void UpdateCarsDiagnostic(List<CarData> carsData, bool throwException)
         {
             _logger.Write($"SuppliersEngine:UpdateCarDiagnostic - Attempt to update car diagnostic data in DB for {SupplierName} supplier, " +
-                          $"carData:='{carsData.ToJSON(true)}', throwException:='{throwException}'");
+                          $"carData: '{carsData.ToJSON(true)}', throwException: '{throwException}'");
             try
             {
                 UpdateCarsDiagnosticData(carsData);
@@ -86,12 +86,13 @@ namespace Eldan.DiagnosticServicesLib.CarsDiagnostic
             }
         }
 
-        private List<CarData> GetSupplierData(Func<List<int>, List<CommonData>> requestSupplierData, Func<List<CommonData>, List<CarData>> transformData)
+        private List<CarData> GetSupplierData(Func<List<int>, List<CommonData>> requestSupplierData, Func<List<CommonData>, List<CarData>> transformData, List<int> carsNumber, bool throwException)
         {
             _logger.Write($"SuppliersEngine:GetSupplierData - Attmpt to get {SupplierName} supplier diagnostic data");
             try
             {
-                List<int> carsNumber = GetSupplierCarsNumber(SupplierName);
+                if (carsNumber == null)
+                    carsNumber = GetSupplierCarsNumber(SupplierName);
                 _logger.Write($"SuppliersEngine:GetSupplierData - {carsNumber.Count} cars number founded for {SupplierName} supplier");
 
                 List<CommonData> suplireDiagnostics = requestSupplierData(carsNumber);
@@ -99,15 +100,11 @@ namespace Eldan.DiagnosticServicesLib.CarsDiagnostic
             }
             catch (Exception ex)
             {
+                if (throwException)
+                    throw ex;
                 DocumentFault($"SuppliersEngine:GetSupplierData - faild to update {SupplierName} supplier data since:", ex);
                 return new List<CarData>();
             }
-        }
-
-        private List<CarData> GetSupplierData<T>(Func<List<int>, List<T>> requestSupplierData, Func<List<T>, List<CarData>> transformData, int carNumber)
-        {
-            List<T> suplireDiagnostics = requestSupplierData(new List<int> { carNumber });
-            return transformData(suplireDiagnostics);
         }
 
         private void DocumentFault(string message, Exception ex)

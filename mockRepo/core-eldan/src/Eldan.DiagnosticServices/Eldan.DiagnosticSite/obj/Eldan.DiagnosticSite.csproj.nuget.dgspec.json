@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj": {}
+    "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj": {}
   },
   "projects": {
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
+    "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
+        "projectUniqueName": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
         "projectName": "Eldan.DiagnosticSiteLib",
-        "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
+        "projectPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj",
         "packagesPath": "C:\\Users\\yosi.zi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\obj\\",
+        "outputPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj": {
+    "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
+        "projectUniqueName": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
         "projectName": "Eldan.DiagnosticSite",
-        "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
+        "projectPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
         "packagesPath": "C:\\Users\\yosi.zi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\obj\\",
+        "outputPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -115,11 +115,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
-                "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj"
+              "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj": {
+                "projectPath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSiteLib\\Eldan.DiagnosticSiteLib.csproj"
               },
-              "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj": {
-                "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj"
+              "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj": {
+                "projectPath": "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj"
               }
             }
           }
@@ -162,89 +162,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\Eldan.LoggerBase\\Eldan.LoggerBase.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\Eldan.LoggerBase\\Eldan.LoggerBase.csproj",
-        "projectName": "Eldan.LoggerBase",
-        "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\Eldan.LoggerBase\\Eldan.LoggerBase.csproj",
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net48": {}
-      }
-    },
-    "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj": {
-      "version": "2.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj",
-        "projectName": "Eldan.Logger",
-        "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj",
-        "packagesPath": "C:\\Users\\yosi.zi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\yosi.zi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\Eldan.LoggerBase\\Eldan.LoggerBase.csproj": {
-                "projectPath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.Logger\\Eldan.LoggerBase\\Eldan.LoggerBase.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

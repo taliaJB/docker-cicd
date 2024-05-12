@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r0sZAXaNn6EdHvFqvewXYb5g06f+cyNe670rdkedXy+pGg8g2hILeZk4ydKMld5bjkZnNtFIkKqiHj10jOMdhA==",
-  "success": true,
-  "projectFilePath": "C:\\Sources\\Branches\\CarsDiagnostic\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
+  "dgSpecHash": "ZpDaApnzEYa/Z9fuFl5ThgxRoZxRJ9SVxVYwijp4ia/vbGUi5aM3HDF+AymYUVQtBgLCIVoDUyK0Xg8TxrcGLg==",
+  "success": false,
+  "projectFilePath": "D:\\New folder (2)\\Eldan.DiagnosticServices\\Eldan.DiagnosticSite\\Eldan.DiagnosticSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yosi.zi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.17\\microsoft.aspnetcore.openapi.7.0.17.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -31,7 +31,7 @@
     "C:\\Users\\yosi.zi\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
     "C:\\Users\\yosi.zi\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\yosi.zi\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
@@ -39,7 +39,7 @@
     "C:\\Users\\yosi.zi\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\yosi.zi\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\yosi.zi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
@@ -68,5 +68,15 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\New folder (2)\\Eldan.Logger\\NewVersion\\Eldan.Logger\\Eldan.Logger\\Eldan.Logger.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

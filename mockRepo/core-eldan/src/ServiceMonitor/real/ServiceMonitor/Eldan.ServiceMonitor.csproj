@@ -6,6 +6,9 @@
     <RootNamespace>Eldan.ServiceMonitor</RootNamespace>
     <AssemblyName>Eldan.ServiceMonitor</AssemblyName>
     <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    
+
   </PropertyGroup>
 
   <ItemGroup>

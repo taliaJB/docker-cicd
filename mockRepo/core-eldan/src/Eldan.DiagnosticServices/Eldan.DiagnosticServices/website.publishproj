@@ -44,10 +44,11 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Eldan.DiagnosticServicesLib\Eldan.DiagnosticServicesLib.csproj">
+    <!-- <ProjectReference Include="..\Eldan.DiagnosticServicesLib\Eldan.DiagnosticServicesLib.csproj">
       <Project>{F1A65ED2-D6B2-4798-B006-6588E1468300}</Project>
       <Name>Eldan.DiagnosticServicesLib</Name>
-    </ProjectReference>
+    </ProjectReference> -->
+    <PackageReference Include="Eldan.DiagnosticServicesLib" Version="*" />
   </ItemGroup>
   <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
 </Project>

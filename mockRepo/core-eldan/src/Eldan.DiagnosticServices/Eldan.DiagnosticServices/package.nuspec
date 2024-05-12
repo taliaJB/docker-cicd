@@ -12,7 +12,9 @@
     <tags>tag1 tag2</tags>
   </metadata>
   <files>
-    <file src="app\out\Eldan.DiagnosticServices.dll" target="lib\net48\" />
-    <!-- Add more <file> elements here for additional files you want to include in the package -->
+    <file src="bin\**\*.*" target="bin" />
+    <!-- <file src="Views\**\*.*" target="Views" /> -->
+    <file src="web.config" target="" />
+    <!-- Add other necessary files -->
   </files>
 </package>

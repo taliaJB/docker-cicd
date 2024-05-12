@@ -30,7 +30,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eldan.DiagnosticServicesLib" Version="1.0.0" />
+    <PackageReference Include="Eldan.DiagnosticServicesLib" Version="*" />
+    <Reference Include="Newtonsoft.Json">
+      <SpecificVersion>False</SpecificVersion>
+      <Culture>neutral</Culture>
+      <PublicKeyToken>30ad4fe6b2a6aeed</PublicKeyToken>
+      <processorArchitecture>MSIL</processorArchitecture>
+      <HintPath>.\requiredDLL\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+
   </ItemGroup>
 
   <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />

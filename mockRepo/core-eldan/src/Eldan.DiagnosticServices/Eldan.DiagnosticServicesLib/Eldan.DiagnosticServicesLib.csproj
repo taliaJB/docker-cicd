@@ -31,19 +31,12 @@
   </PropertyGroup>
  
  
+ 
   <ItemGroup>
     <PackageReference Include="Eldan.DataAccess" Version="120.0.0-eldan" />
     <PackageReference Include="Eldan.TypeExtensions" Version="116.0.0-eldan" />
     <PackageReference Include="Eldan.LoggerFrm" Version="*" />
-    <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
-    <!-- Add other package references if needed -->
-  </ItemGroup>
- 
-  <ItemGroup>
-    <PackageReference Include="Eldan.LoggerFrm" Version="*" />
-    <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
     <PackageReference Include="Eldan.LoggerBase" Version="*" />
-    <PackageReference Include="Eldan.LoggerFrm" Version="*" />
     <PackageReference Include="Eldan.ServiceMonitor" Version="*" />
     <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
 

@@ -42,23 +42,17 @@
   <ItemGroup>
     <PackageReference Include="Eldan.LoggerFrm" Version="*" />
     <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
+    <PackageReference Include="Eldan.LoggerBase" Version="*" />
+    <PackageReference Include="Eldan.LoggerFrm" Version="*" />
+    <PackageReference Include="Eldan.ServiceMonitor" Version="*" />
+    <PackageReference Include="Eldan.ServicesSchedulerLib" Version="*" />
+
     <!-- Add other package references if needed -->
 
   </ItemGroup>
  
   <ItemGroup>
-    <Reference Include="Eldan.LoggerBase">
-      <HintPath>..\..\Dlls\Eldan.LoggerBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Eldan.LoggerFrm">
-      <HintPath>..\..\Dlls\Eldan.LoggerFrm.dll</HintPath>
-    </Reference>
-    <Reference Include="Eldan.ServiceMonitor">
-      <HintPath>..\..\Dlls\Eldan.ServiceMonitor.dll</HintPath>
-    </Reference>
-    <Reference Include="Eldan.ServicesSchedulerLib">
-      <HintPath>..\..\Dlls\Eldan.ServicesSchedulerLib.dll</HintPath>
-    </Reference>
+
     <!-- <Reference Include="Eldan.TypeExtensions"> -->
       <!-- <HintPath>..\..\Dlls\Eldan.TypeExtensions.dll</HintPath> -->
     <!-- </Reference> -->
@@ -73,21 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
  
- 
-  <ItemGroup>
-    <Compile Include="CarsDiagnostic\CarData.cs" />
-    <Compile Include="CarsDiagnostic\CarsDiagnosticBL.cs" />
-    <Compile Include="CarsDiagnostic\CarsDiagnosticBLEvents.cs" />
-    <Compile Include="CarsDiagnostic\CarsDiagnosticDAL.cs" />
-    <Compile Include="CarsDiagnostic\CommonData.cs" />
-    <Compile Include="CarsDiagnostic\SupplierEdi.cs" />
-    <Compile Include="CarsDiagnostic\SupplierIturan.cs" />
-    <Compile Include="CarsDiagnostic\SupplierInet.cs" />
-    <Compile Include="CarsDiagnostic\Supplier.cs" />
-    <Compile Include="CarsDiagnostic\SupplierPointer.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <!-- Add other source files if needed -->
-  </ItemGroup>
  
  
  </Project>

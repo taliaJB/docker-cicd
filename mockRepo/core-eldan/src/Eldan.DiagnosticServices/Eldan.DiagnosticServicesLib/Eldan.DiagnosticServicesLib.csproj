@@ -44,6 +44,11 @@
 
   </ItemGroup>
  
+
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="**\*.Test.cs"  />
+  </ItemGroup>
+  
   <ItemGroup>
 
     <!-- <Reference Include="Eldan.TypeExtensions"> -->
